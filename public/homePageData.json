@@ -1,0 +1,12 @@
+{
+    "main": {
+        "phrase" : [
+            {
+                "one" : "Keep track of games you've played.",
+                "two" : "Rate the ones you loved.",
+                "three" : "Tell your friends what's great."
+            }
+        ],
+        "socialMessage" : "Social network for gamers."
+    }
+}
