@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 
 function Home(props) {
   //useState for json data file
-  const [homeData, setHomeData] = useState({});
+  const [homeData, setHomeData] = useState();
 
   //useEffect for fetching the json data file
   useEffect(() => {
@@ -15,28 +15,29 @@ function Home(props) {
       });
   }, []);
 
-  //function for phrases on home page
-
-  const ShowPhrases = () => {
-    return homeData.phrase.map((phrase) => {
+  //Variables
+  if (homeData) {
+    var phrases = homeData.phrase.map((something) => {
       return (
         <>
-          <div>{phrase.one}</div>
-          <div>{phrase.two}</div>
-          <div>{phrase.three}</div>
+          <div>{something.one}</div>
+          <div>{something.two}</div>
+          <div>{something.three}</div>
         </>
       );
     });
-  };
+    var socialMessage = homeData.socialMessage;
+    var reviewMessage = homeData.reviewsMessage;
+  }
 
   return (
     <>
-      <div>
-        <ShowPhrases />
-      </div>
+      <div>{phrases}</div>
       <div>
         <button>JOIN NOW - IT'S FREE</button>
       </div>
+      <div>{socialMessage}</div>
+      <div>{reviewMessage}</div>
     </>
   );
 }

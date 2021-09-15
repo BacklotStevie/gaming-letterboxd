@@ -7,6 +7,7 @@
                 "three" : "Tell your friends what's great."
             }
         ],
-        "socialMessage" : "Social network for gamers."
+        "socialMessage" : "Social network for gamers.",
+        "reviewsMessage" : "Share reviews on popular games. Make your own lists. Connect with other gamers."
     }
 }
