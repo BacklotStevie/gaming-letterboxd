@@ -17,12 +17,12 @@ function Home(props) {
 
   //Variables
   if (homeData) {
-    var phrases = homeData.phrase.map((something) => {
+    var phrases = homeData.phrase.map((phrase) => {
       return (
         <>
-          <div>{something.one}</div>
-          <div>{something.two}</div>
-          <div>{something.three}</div>
+          <div>{phrase.one}</div>
+          <div>{phrase.two}</div>
+          <div>{phrase.three}</div>
         </>
       );
     });
