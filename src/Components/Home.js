@@ -33,7 +33,7 @@ function Home(props) {
   return (
     <>
       <div>{phrases}</div>
-      <div>
+      <div className='border-2'>
         <button>JOIN NOW - IT'S FREE</button>
       </div>
       <div>{socialMessage}</div>
