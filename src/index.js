@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+// import { FontAwesomeIcon} from '@fortawesome/free-solid-svg-icons'
 
 import { BrowserRouter } from "react-router-dom";
 

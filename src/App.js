@@ -7,6 +7,7 @@ import axios from "axios";
 
 import actions from "./Components/api";
 import Home from "./Components/Home";
+import Header from './Components/header'
 
 function App() {
   const [testAPI, setTestAPI] = useState([]);
@@ -31,6 +32,7 @@ function App() {
   return (
     <div className="App">
       <div className="body-container">
+        <Header />
         <Switch>
           <Route exact path="/" render={(props) => <Home />} />
         </Switch>
