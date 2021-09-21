@@ -15,6 +15,9 @@ const Header = ({ siteTitle }) => {
             <a href="" class="block mt-4 lg:inline-block lg:mt-0 text-black text-decoration: underline hover:no-underline hover:text-red-700">
                Other
             </a>
+            <a href="" class="block mt-4 lg:inline-block lg:mt-0 text-black text-decoration: underline hover:no-underline hover:text-red-700 mr-7">
+              List
+            </a>
 
         </div>
       </div>
