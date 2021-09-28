@@ -22,6 +22,7 @@ function Home(props) {
   }, []);
 
   //Variables
+  
   if (homeData) {
     var phrases = homeData.phrase.map((phrase) => {
       return (
@@ -52,6 +53,28 @@ function Home(props) {
         <img src={deathloop} alt='...' class='pt-3 px-4 h-60'></img>
       </div>
       <div class='text-white italic pt-6 pb-6 font-sans text-xl font-bold pt-5 bg-gradient-to-b from-gray-800 to-gray-800'>{reviewMessage}</div>
+      
+      <div class="flex pt-6 bg-gradient-to-b from-gray-800 to-gray-800 mx-auto px-8">
+          <div class="flex table w-full">
+             <div class="flex block sm:table-cell">
+                    <p class="uppercase pl-5 text-red-700 text-sm sm:mb-6"></p>
+                    <ul class="list-reset text-xs mb-6">
+                        <li class="mt-2 inline-block mr-2 sm:block sm:mr-0">
+                            <a href="" class="text-white hover:text-grey-dark">Contact Us</a>
+                        </li>
+                        <li class="mt-2 inline-block mr-2 sm:block sm:mr-0">
+                            <a href="http://vimeo.com/trigan" class="text-white hover:text-grey-dark">News</a>
+                        </li>
+                        <li class="mt-2 inline-block mr-2 sm:block sm:mr-0">
+                            <a href="/testimonials" class="text-white hover:text-grey-dark">Podcast</a>
+                        </li>
+                        <li class="mt-2 inline-block mr-2 sm:block sm:mr-0">
+                            <a href="/testimonials" class="text-white hover:text-grey-dark">Help</a>
+                        </li>
+                    </ul>
+                </div>
+          </div>
+      </div>
     </>
   );
 }
